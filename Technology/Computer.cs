@@ -8,5 +8,18 @@ namespace Technology
 {
     class Computer
     {
+        public string Name { get; set; }
+        public string Brand { get; set; }
+        public string OS { get; set; }
+
+        public void SendEmail(string recipient, string message)
+        {
+            Console.WriteLine($"Email sent to {recipient}, the message was {message}");
+        }
+        public void CheckHealth()
+        {
+            Console.WriteLine("Device is super healthy");
+        }
+
     }
 }

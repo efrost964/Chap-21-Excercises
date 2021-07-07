@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    class AbstractClass
+    class AbstractEntity
     {
     }
 }
