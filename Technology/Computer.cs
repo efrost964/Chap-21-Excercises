@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    class Computer
+    class Computer : AbstractEntity
     {
         public string Name { get; set; }
         public string Brand { get; set; }
         public string OS { get; set; }
         
-        public Computer(string name, string brand, string os)
+        public Computer(string name, string brand, string os) : base()
         {
             Name = name;
             Brand = brand;

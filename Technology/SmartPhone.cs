@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    class SmartPhone
+    class SmartPhone : Computer
     {
+        public string Provider { get; set; }
+        public SmartPhone(string name, string brand, string os, string provider) : base(name, brand, os)
+        {
+            Provider = provider;
+        }
+
+        public void MakeCall(int number)
+        {
+            Console.WriteLine($"Calling {number}.... Ring... Ring...");
+        }
     }
 }
