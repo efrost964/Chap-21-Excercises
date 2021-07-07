@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    public class SmartPhone : Computer
+    public class SmartPhone : Laptop
     {
         public string Provider { get; set; }
         public SmartPhone(string name, string brand, string os, string provider) : base(name, brand, os)
@@ -14,9 +14,9 @@ namespace Technology
             Provider = provider;
         }
 
-        public void MakeCall(int number)
+        public string MakeCall(int number)
         {
-            Console.WriteLine($"Calling {number}.... Ring... Ring...");
+            return $"Calling {number}.... Ring... Ring...";
         }
     }
 }

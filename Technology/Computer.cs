@@ -12,7 +12,7 @@ namespace Technology
         public string Brand { get; set; }
         public string OS { get; set; }
         
-        public Computer(string name, string brand, string os) : base()
+        public Computer(string name, string brand, string os)
         {
             Name = name;
             Brand = brand;
