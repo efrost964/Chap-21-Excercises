@@ -11,6 +11,13 @@ namespace Technology
         public string Name { get; set; }
         public string Brand { get; set; }
         public string OS { get; set; }
+        
+        public Computer(string name, string brand, string os)
+        {
+            Name = name;
+            Brand = brand;
+            OS = os;
+        }
 
         public void SendEmail(string recipient, string message)
         {
