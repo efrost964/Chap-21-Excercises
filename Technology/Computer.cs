@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    class Computer : AbstractEntity
+    public class Computer : AbstractEntity
     {
         public string Name { get; set; }
         public string Brand { get; set; }
@@ -19,13 +19,14 @@ namespace Technology
             OS = os;
         }
 
-        public void SendEmail(string recipient, string message)
+        public string SendEmail(string recipient, string message)
         {
-            Console.WriteLine($"Email sent to {recipient}, the message was {message}");
+            string str = $"Email sent to {recipient}, the message was {message}";
+            return str;
         }
-        public void CheckHealth()
+        public string CheckHealth()
         {
-            Console.WriteLine("Device is super healthy");
+            return "Device is super healthy";
         }
 
     }

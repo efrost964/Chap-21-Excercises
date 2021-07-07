@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    class Laptop : Computer
+    public class Laptop : Computer
     {
         public int BatteryLevel { get; set; }
         public Laptop(string name, string brand, string os) : base(name, brand, os)

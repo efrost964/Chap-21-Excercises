@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Technology
 {
-    abstract class AbstractEntity
+    public abstract class AbstractEntity
     {
         public string IP { get; set; }
         internal int number = 0;
