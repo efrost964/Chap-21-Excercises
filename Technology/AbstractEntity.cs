@@ -9,7 +9,7 @@ namespace Technology
     abstract class AbstractEntity
     {
         public string IP { get; set; }
-        public int number = 0;
+        internal int number = 0;
 
         public AbstractEntity()
         {
